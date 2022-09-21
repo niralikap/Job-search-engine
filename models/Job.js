@@ -19,32 +19,38 @@ Job.init(
             type: DataTypes.STRING,
         },
         experience: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
         },
         industry: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,//Set up dictionary function to match these to different departments
         },
         postDate: {
             type: DataTypes.DATE,
             allowNull: false,
             defaultValue: DataTypes.NOW,
         },
-        salary: {
+        minSalary: {
             type: DataTypes.INTEGER,
         },
-        employer: {
+        maxSalary: {
+            type: DataTypes.INTEGER
+        },
+        employer: {//Either individual or company name
             type: DataTypes.STRING,
         },
-        location: {
+        city: {
+            type: DataTypes.STRING,
+        },
+        state: {
             type: DataTypes.STRING,
         },
         isRemote: {//Data type is string instead of boolean to allow for hybrid positions
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
         },
         hours: {//This is meant to be full-time vs part time
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
         },
-        user_id: {
+        poster_id: {
             type: DataTypes.INTEGER,
             references: {
                 model: 'user',
@@ -62,3 +68,30 @@ Job.init(
 );
 
 module.exports = Job;
+
+
+/*
+Arrays to be mapped to appropriate properties
+industry = [
+    IT,
+    Finance,
+    Front-end,
+    Back-end,
+]
+
+
+isRemote = [
+    remote,
+    in-person,
+    hybrid,
+]
+
+hours = [
+    full-time,
+    part-time,
+    intern,
+]
+
+experience = [
+    entry-level,
+]*/
