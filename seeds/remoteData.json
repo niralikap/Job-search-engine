@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "name": "On-site"
+    },
+    {
+        "id": "2",
+        "name": "Remote"
+    },
+    {
+        "id": "3",
+        "name": "Hybrid"
+    }
+]
