@@ -1,11 +1,17 @@
 [
     {
+        "username": "beroterros",
+        "email": "chestank@gmail.com",
+        "password": "tacos"
+    },
+    {
+        "username": "AWSJanet",
+        "email": "janetk@amazon.com",
+        "password": "p4$$w0rd"
+    },
+    {
         "username": "",
         "email": "",
-        "password": "",
-        "industry": "",
-        "isRemote": "",
-        "experience": "",
-        "hours": ""
+        "password": ""
     }
 ]

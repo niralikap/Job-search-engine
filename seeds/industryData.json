@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "name": "Sales"
+    },
+    {
+        "id": "2",
+        "name": "IT"
+    },
+    {
+        "id": "3",
+        "name": "Management"
+    },
+    {
+        "id": "4",
+        "name": "Manufacturing"
+    },
+    {
+        "id": "5",
+        "name": "Engineering"
+    },
+    {
+        "id": "6",
+        "name": "Business Development"
+    },
+    {
+        "id": "7",
+        "name": "Production"
+    },
+    {
+        "id": "8",
+        "name": "Finance"
+    },
+    {
+        "id": "9",
+        "name": "Marketing"
+    },
+    {
+        "id": "10",
+        "name": "Software Development"
+    },
+    {
+        "id": "11",
+        "name": "Retail"
+    },
+    {
+        "id": "12",
+        "name": "Banking"
+    },
+    {
+        "id": "13",
+        "name": "Business Consulting"
+    },
+    {
+        "id": "14",
+        "name": "Investment Management"
+    },
+    {
+        "id": "15",
+        "name": "Professional Coaching"
+    }
+]
