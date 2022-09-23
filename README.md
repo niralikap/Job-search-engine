@@ -38,7 +38,7 @@ Made by Nirali Parmar, Joshua Nelson, Jamie Olivas, and John Aslani, AKA MVC MVP
 ![Job Selection Form](./assets/imgs/Jobselectionform.PNG)
 ![Login](./assets/imgs/Login.png)
 
-## Link to deployed application
+## Link to deployed akpplication
 
 https://johnaslani.github.io/Crowdfunding-App/
 
