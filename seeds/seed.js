@@ -1,4 +1,4 @@
-const sequelize = require('../config/conncetion');
+const sequelize = require('../config/connection');
 const { User, Job, Remote, Experience, Hours, Industry } = require('../models');
 
 const jobData = require('./jobData.json');
