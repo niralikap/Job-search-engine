@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const Job = require('../models/Job');
 
-// route to get all dishes
+// route to get all jobs
 router.get('/', async (req, res) => {
   const jobData = await Job.findAll().catch((err) => { 
       res.json(err);
@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
       res.render('all', { jobs });
     });
 
-// route to get one dish
+// route to get one job
 router.get('/job/:id', async (req, res) => {
   try{ 
       const jobData = await Job.findByPk(req.params.id);
