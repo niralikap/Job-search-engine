@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "name": "Internship"
+    },
+    {
+        "id": "2",
+        "name": "Entry"
+    },
+    {
+        "id": "3",
+        "name": "Associate"
+    },
+    {
+        "id": "4",
+        "name": "Mid-Senior"
+    },
+    {
+        "id": "5",
+        "name": "Director"
+    },
+    {
+        "id": "6",
+        "name": "Executive"
+    }
+]

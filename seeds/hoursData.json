@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "name": "Full-time"
+    },
+    {
+        "id": "2",
+        "name": "Part-time"
+    },
+    {
+        "id": "3",
+        "name": "Contract"
+    },
+    {
+        "id": "4",
+        "name": "Temporary"
+    },
+    {
+        "id": "5",
+        "name": "Volunteer"
+    },
+    {
+        "id": "6",
+        "name": "Internship"
+    }
+]

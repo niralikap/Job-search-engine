@@ -40,8 +40,8 @@ Made by Nirali Parmar, Joshua Nelson, Jamie Olivas, and John Aslani, AKA MVC MVP
 
 ## Link to deployed application
 
-https://johnaslani.github.io/Crowdfunding-App/
+https://niralikap.github.io/Job-search-engine/
 
 ## Link to GitHub repo:
 
-https://github.com/johnaslani/Crowdfunding-App
+https://github.com/niralikap/Job-search-engine

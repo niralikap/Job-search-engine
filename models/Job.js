@@ -20,9 +20,17 @@ Job.init(
         },
         experience: {
             type: DataTypes.INTEGER,
+            references: {
+                model: 'experience',
+                key: 'id'
+            },
         },
         industry: {
             type: DataTypes.INTEGER,//Set up dictionary function to match these to different departments
+            references: {
+                model: 'industry',
+                key: 'id'
+            },
         },
         postDate: {
             type: DataTypes.DATE,
@@ -46,9 +54,17 @@ Job.init(
         },
         isRemote: {//Data type is string instead of boolean to allow for hybrid positions
             type: DataTypes.INTEGER,
+            references: {
+                model: 'remote',
+                key: 'id',
+            },
         },
         hours: {//This is meant to be full-time vs part time
             type: DataTypes.INTEGER,
+            references: {
+                model: 'hours',
+                key: 'id',
+            },
         },
         poster_id: {
             type: DataTypes.INTEGER,
@@ -89,9 +105,17 @@ isRemote = [
 hours = [
     full-time,
     part-time,
+    contract,
+    temporary,
+    volunteer,
     intern,
 ]
 
 experience = [
+    intern,
     entry-level,
+    associate,
+    mid-senior,
+    director,
+    executive,
 ]*/
