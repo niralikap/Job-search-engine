@@ -39,7 +39,6 @@ router.post('/', async (req, res) => {
   }
 });
 
-module.exports = router;
 
 // Added comments describing the functionality of this `login` route
 router.post('/login', async (req, res) => {
@@ -55,10 +54,10 @@ router.post('/login', async (req, res) => {
     const validPassword = await bcrypt.compare(
       req.body.password,
       userData.password
-    );
-    // if they do not match, return error message
-    if (!validPassword) {
-      res.status(400).json({ message: 'Login failed. Please try again!' });
+      );
+      // if they do not match, return error message
+      if (!validPassword) {
+        res.status(400).json({ message: 'Login failed. Please try again!' });
       return;
     }
     // if they do match, return success message
@@ -67,3 +66,5 @@ router.post('/login', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+module.exports = router;
