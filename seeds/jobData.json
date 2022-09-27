@@ -14,17 +14,17 @@
         "poster_id": "1"
     },
     {
-        "title": "",
-        "description": "",
-        "experience": "",
-        "industry": "",
-        "minSalary": "",
-        "maxSalary": "",
-        "employer": "",
-        "city": "",
-        "state": "",
-        "isRemote": "",
-        "hours": "",
-        "poster_id": ""
+        "title": "Site Technician",
+        "description": "A developer to maintain e-commerce",
+        "experience": "3",
+        "industry": "10",
+        "minSalary": "85000",
+        "maxSalary": "95000",
+        "employer": "Amazon Web Services",
+        "city": "Seattle",
+        "state": "WA",
+        "isRemote": "2",
+        "hours": "1",
+        "poster_id": "2"
     }
 ]
