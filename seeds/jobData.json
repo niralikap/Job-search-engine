@@ -1,24 +1,30 @@
 [
     {
-        "title": "Game Coder",
-        "description": "Needed programmer",
-        "experience": "",
-        "industry": "",
-        "salary": "",
-        "employer": "Zynga",
-        "location": "",
-        "isRemote": "",
-        "hours": ""
+        "title": "Tech Outside Plant Compliance",
+        "description": "Physical labor to lay out wires",
+        "experience": "2",
+        "industry": "5",
+        "minSalary": "",
+        "maxSalary": "",
+        "employer": "Comcast",
+        "city": "Oakland",
+        "state": "CA",
+        "isRemote": "1",
+        "hours": "1",
+        "poster_id": "1"
     },
     {
         "title": "",
         "description": "",
         "experience": "",
         "industry": "",
-        "salary": "",
+        "minSalary": "",
+        "maxSalary": "",
         "employer": "",
-        "location": "",
+        "city": "",
+        "state": "",
         "isRemote": "",
-        "hours": ""
+        "hours": "",
+        "poster_id": ""
     }
 ]

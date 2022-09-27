@@ -9,7 +9,7 @@ const app = express();
 const sess = {
     secret: 'passcode goes here later',
     cookie: {
-        maxAge: 30000,
+        maxAge: 360000,
         httpOnly: true,
         secure: false,
         sameSite: 'strict',
@@ -20,3 +20,5 @@ const sess = {
         db: sequelize
     })
 };
+
+app.use(session(sess));
