@@ -1,0 +1,20 @@
+<div class="job-card">
+  <div class="job-card-header">
+    {{job_category}}
+  </div>
+  <div class="card-body">
+    <p>
+      Experience Level
+      {{experience_level}}
+    </p>
+    <p>
+      Guest:
+      {{job_title}}
+    </p>
+    {{#if has_salary_range}}
+      <p class="has-salary-range">
+        Salary Range provided
+      </p>
+    {{/if}}
+  </div>
+</div>
