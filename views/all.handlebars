@@ -16,72 +16,112 @@
         Industry:
       </label>
       <br />
-      <textarea id='industry' name='industry' rows='2' cols='30'>
-        {{industry}}
-      </textarea>
+      <select id='industry' name='industry' rows='2' cols='30'>
+        <!--{{#each industry}}
+        <option value={{industry.id}}>{{industry.name}}</option>
+        {{/each}}   -->
+        <option value="sales">Sales</option>
+  <option value="it">IT</option>
+  <option value="management">Management</option>
+  <option value="manufacturing">Manufacturing</option>
+  <option value="engineering">Engineering</option>
+  <option value="businessdevelopment">Business Development</option>
+  <option value="production">Production</option>
+  <option value="finance">Finance</option>
+  <option value="marketing">Marketing</option>
+  <option value="softwaredevelopment">Software Development</option>
+  <option value="retail">Retail</option> 
+  <option value="banking">Banking</option>
+  <option value="businessconsulting">Business Consulting</option>
+  <option value="investmentmanagement">Investment Management</option>
+  <option value="professionalcoaching">Professional Coaching</option>  
+      </select>
       <br />
       <label for='experience'>
         Experience 
       </label>
       <br />
-      <textarea id='experience' name='experience' rows='5' cols='30'>
+      <select id='experience' name='experience' rows='5' cols='30'>
         {{experience}}
-      </textarea>
+        <option value="internship">Internship</option>
+        <option value="entry">Entry</option>
+        <option value="associate">Associate</option>
+        <option value="mid-Senior">Mid-Senior</option>
+        <option value="director">Director</option>
+        <option value="executive">Executive</option>
+      </select>
       <br />
      
       <label for='minSalary'>
         Minimum Salary:
       </label>
       <br />
-      <textarea id='minSalary' name='minSalary' rows='2' cols='30'>
+      <input id='minSalary' name='minSalary' rows='2' cols='30'>
         {{minSalary}}
-      </textarea>
+      </input>
       <br />
       <label for='maxSalary'>
         Maximum Salary:
       </label>
       <br />
-      <textarea id='maxSalary' name='maxSalary' rows='2' cols='30'>
+      <input id='maxSalary' name='maxSalary' rows='2' cols='30'>
         {{maxSalary}}
-      </textarea>
+      </input>
       <br />
       <label for='employer'>
         Employer:
       </label>
       <br />
-      <textarea id='employer' name='employer' rows='2' cols='30'>
+      <input id='employer' name='employer' rows='2' cols='30'>
         {{employer}}
-      </textarea>
+      </input>
       <br />
       <label for='city'>
         City:
       </label>
       <br />
-      <textarea id='city' name='city' rows='2' cols='30'>
+      <input id='city' name='city' rows='2' cols='30'>
         {{city}}
-      </textarea>
+      </input>
       <br />
       <label for='state'>
         State:
       </label>
       <br />
-      <textarea id='state' name='state' rows='2' cols='30'>
+      <input id='state' name='state' rows='2' cols='30'>
         {{state}}
-      </textarea>
+      </input>
       <br />
       <label for='isRemote'>
-        Is Remote?:
+        Is Remote?
       </label>
       <br />
-      <textarea id='isRemote' name='isRemote' rows='2' cols='30'>
+      <select id='isRemote' name='isRemote' rows='2' cols='30'>
         {{isRemote}}
-      </textarea>
+        <option value="onsite">On-site</option>
+        <option value="remote">Remote</option>
+        <option value="hybrid">Hybrid</option>
+      </select>
       <br />
       {{!-- <input type='checkbox' id='has_salary_range' name='has_salary_range' value='true' />
       <label for='has_salary_range'>
         Check box if this job has salary range
       </label>
       <br /> --}}
+       <label for='hours'>
+        Hours
+      </label>
+      <br />
+      <select id='hours' name='hours' rows='2' cols='30'>
+        {{hours}}
+        <option value="fulltime">Full-time</option>
+        <option value="parttime">Part-time</option>
+        <option value="contract">Contract</option>
+        <option value="temporary">Temporary</option>
+        <option value="volunteer">Volunteer</option>
+        <option value="internship">Internship</option>
+      </select>
+      <br />
       <button type='submit' value='Submit'>
         Submit
       </button>
@@ -89,4 +129,4 @@
   </div>
 </div>
 
-<script src='/Job.js'></script>
+<script src='./js/jobsearch.js'></script>
