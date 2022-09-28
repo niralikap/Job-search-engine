@@ -4,6 +4,7 @@
       Jobs
     </h2>
     <form class='new-job-form'>
+<<<<<<< HEAD
       <label for='job_category'>
         Job Category:
       </label>
@@ -22,23 +23,91 @@
       <br />
       <label for='job_title'> <!-- Does it need to move up? -->
         Job <Title></Title><Title></Title> <!-- Why repeating -->
+=======
+      <label for='title'>
+        Job <Title></Title><Title></Title>
+>>>>>>> b30185f0f34d1315ea9c3560b57c1c08549651ab
       </label>
       <br />
-      <textarea id='job_title' name='job_title' rows='2' cols='30'>
-        {{job_title}}
+      <textarea id='title' name='title' rows='2' cols='30'>
+        {{title}}
       </textarea>
       <br />
+      <label for='industry'>
+        Industry:
+      </label>
       <br />
-      <input type='checkbox' id='has_salary_range' name='has_salary_range' value='true' />
+      <textarea id='industry' name='industry' rows='2' cols='30'>
+        {{industry}}
+      </textarea>
+      <br />
+      <label for='experience'>
+        Experience 
+      </label>
+      <br />
+      <textarea id='experience' name='experience' rows='5' cols='30'>
+        {{experience}}
+      </textarea>
+      <br />
+     
+      <label for='minSalary'>
+        Minimum Salary:
+      </label>
+      <br />
+      <textarea id='minSalary' name='minSalary' rows='2' cols='30'>
+        {{minSalary}}
+      </textarea>
+      <br />
+      <label for='maxSalary'>
+        Maximum Salary:
+      </label>
+      <br />
+      <textarea id='maxSalary' name='maxSalary' rows='2' cols='30'>
+        {{maxSalary}}
+      </textarea>
+      <br />
+      <label for='employer'>
+        Employer:
+      </label>
+      <br />
+      <textarea id='employer' name='employer' rows='2' cols='30'>
+        {{employer}}
+      </textarea>
+      <br />
+      <label for='city'>
+        City:
+      </label>
+      <br />
+      <textarea id='city' name='city' rows='2' cols='30'>
+        {{city}}
+      </textarea>
+      <br />
+      <label for='state'>
+        State:
+      </label>
+      <br />
+      <textarea id='state' name='state' rows='2' cols='30'>
+        {{state}}
+      </textarea>
+      <br />
+      <label for='isRemote'>
+        Is Remote?:
+      </label>
+      <br />
+      <textarea id='isRemote' name='isRemote' rows='2' cols='30'>
+        {{isRemote}}
+      </textarea>
+      <br />
+      {{!-- <input type='checkbox' id='has_salary_range' name='has_salary_range' value='true' />
       <label for='has_salary_range'>
         Check box if this job has salary range
       </label>
-      <br />
+      <br /> --}}
       <button type='submit' value='Submit'>
         Submit
       </button>
     </form>
   </div>
 </div>
-<!-- This is the form for adding a new dish -->
-<script src='/js/add-dish.js'></script>
+
+<script src='/Job.js'></script>

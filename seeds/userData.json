@@ -2,7 +2,7 @@
     {
         "username": "beroterros",
         "email": "chestank@gmail.com",
-        "password": "tacos"
+        "password": "fetchlavache"
     },
     {
         "username": "AWSJanet",
@@ -10,8 +10,8 @@
         "password": "p4$$w0rd"
     },
     {
-        "username": "",
-        "email": "",
-        "password": ""
+        "username": "TestingDummy",
+        "email": "foobar@foobar.foo",
+        "password": "foobarfoobar"
     }
 ]

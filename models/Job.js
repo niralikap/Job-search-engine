@@ -19,18 +19,10 @@ Job.init(
             type: DataTypes.STRING,
         },
         experience: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'experience',
-                key: 'id'
-            },
+            type: DataTypes.ENUM('Internship', 'Entry', 'Associate', 'Mid-Senior', 'Director', 'Executive'),
         },
         industry: {
-            type: DataTypes.INTEGER,//Set up dictionary function to match these to different departments
-            references: {
-                model: 'industry',
-                key: 'id'
-            },
+            type: DataTypes.ENUM('Sales', 'IT', 'Management', 'Manufacturing', 'Engineering', 'Business Development', 'Production', 'Finance', 'Marketing', 'Software Development', 'Retail', 'Banking', 'Business Consulting', 'Investment Management', 'Professional Coaching'),//Set up dictionary function to match these to different departments
         },
         postDate: {
             type: DataTypes.DATE,
@@ -53,18 +45,10 @@ Job.init(
             type: DataTypes.STRING,
         },
         isRemote: {//Data type is string instead of boolean to allow for hybrid positions
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'remote',
-                key: 'id',
-            },
+            type: DataTypes.ENUM('On-site', 'Remote', 'Hybrid'),
         },
         hours: {//This is meant to be full-time vs part time
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'hours',
-                key: 'id',
-            },
+            type: DataTypes.ENUM('Full-time', 'Part-time', 'Contract', 'Temporary', 'Volunteer', 'Internship'),
         },
         poster_id: {
             type: DataTypes.INTEGER,
