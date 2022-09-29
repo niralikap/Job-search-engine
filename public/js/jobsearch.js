@@ -30,13 +30,19 @@ async function newFormHandler(event) {
     });
   
     if (response.ok) {
-      document.location.replace('/job');
+      await fetch(`api/job`, {
+        method: 'GET',
+      })
+      res.render('job', {
+        ...response,
+      });
+      //document.location.replace('/api/job' + res.id);
     } else {
       alert('Failed to add job');
     }
-  }
+  };
   
-  const response = await fetch(`/api/job`, {
+  /*const response = await fetch(`/api/job`, {
     method: 'GET',
     body: JSON.stringify({
       title,
@@ -58,12 +64,12 @@ async function newFormHandler(event) {
     document.location.replace('/job');
   } else {
     alert('Failed to add job');
-  }
+  }*/
 
 
-  document
-    .querySelector('.new-job-form')
-    .addEventListener('submit', newFormHandler);
+document
+  .querySelector('.new-job-form')
+  .addEventListener('submit', newFormHandler);
   
 document
 .querySelector('.new-job-form')
