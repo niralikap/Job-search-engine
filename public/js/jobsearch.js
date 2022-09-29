@@ -30,13 +30,41 @@ async function newFormHandler(event) {
     });
   
     if (response.ok) {
-      document.location.replace('/job/' +response.data.id);
+      document.location.replace('/job');
     } else {
       alert('Failed to add job');
     }
   }
   
+  const response = await fetch(`/api/job`, {
+    method: 'GET',
+    body: JSON.stringify({
+      title,
+      industry,
+      experience,
+      minSalary,
+      maxSalary,
+      employer,
+      city,
+      state,
+      isRemote,
+    }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  if (response.ok) {
+    document.location.replace('/job');
+  } else {
+    alert('Failed to add job');
+  }
+
+
   document
     .querySelector('.new-job-form')
     .addEventListener('submit', newFormHandler);
   
+document
+.querySelector('.new-job-form')
+.addEventListener('search', newFormHandler);
