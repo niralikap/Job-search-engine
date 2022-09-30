@@ -31,16 +31,17 @@ Made by Nirali Parmar, Joshua Nelson, Jamie Olivas, and John Aslani, AKA MVC MVP
 
 ## Screenshot
 
+![Deployed App on Heroku](./assets/imgs/DeployedAppHeroku.PNG)
 
 ## Mockup
 
-![JOb Description](./assets/imgs/Jobdescription.png)
+![Job Description](./assets/imgs/Jobdescription.png)
 ![Job Selection Form](./assets/imgs/Jobselectionform.PNG)
 ![Login](./assets/imgs/Login.png)
 
 ## Link to deployed application
 
-https://niralikap.github.io/Job-search-engine/
+https://radiant-coast-98799.herokuapp.com/
 
 ## Link to GitHub repo:
 
