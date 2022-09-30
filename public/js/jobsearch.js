@@ -5,11 +5,11 @@ async function newFormHandler(event) {
     const industry = document.querySelector('#industry').value;
     const experience = document.querySelector('#experience').value;
     const minSalary = document.querySelector('#minSalary').value;
-    const maxSalary = document.querySelector('#maxSalary');
-    const employer = document.querySelector('#employer');
-    const city = document.querySelector('#city');
-    const state = document.querySelector('#state');
-    const isRemote = document.querySelector('#isRemote') ? true : false;
+    const maxSalary = document.querySelector('#maxSalary').value;
+    const employer = document.querySelector('#employer').value;
+    const city = document.querySelector('#city').value;
+    const state = document.querySelector('#state').value;
+    const isRemote = document.querySelector('#isRemote').value;
   
     const response = await fetch(`/api/job`, {
       method: 'POST',
@@ -30,7 +30,7 @@ async function newFormHandler(event) {
     });
   
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace('/job/' +response.data.id);
     } else {
       alert('Failed to add job');
     }
