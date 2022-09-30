@@ -1,5 +1,8 @@
 const router = require('express').Router();
 const Job = require('../../models/Job');
+//const { Project } = require('../../models/User');
+const withAuth = require('../../utils/helpers');
+//const { User } = require('../../models');
 
 // route to create/add a job using async/await
 router.post('/', async (req, res) => {
