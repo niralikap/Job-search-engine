@@ -6,6 +6,6 @@ router.use('/job', jobRoutes);
 
 const loginRoutes = require('./loginRoutes');
 
-router.use('/login', loginRoutes);
+router.use('/users/login', loginRoutes);
 
 module.exports = router;
