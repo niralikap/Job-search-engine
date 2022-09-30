@@ -28,15 +28,11 @@ async function newFormHandler(event) {
         'Content-Type': 'application/json',
       },
     });
-  
+    const data = await response.json();
+    console.log(data);
     if (response.ok) {
-      await fetch(`api/job`, {
-        method: 'GET',
-      })
-      res.render('job', {
-        ...response,
-      });
-      //document.location.replace('/api/job' + res.id);
+
+      document.location.replace('/job/' + data.id);
     } else {
       alert('Failed to add job');
     }
@@ -71,6 +67,6 @@ document
   .querySelector('.new-job-form')
   .addEventListener('submit', newFormHandler);
   
-document
+/*document
 .querySelector('.new-job-form')
-.addEventListener('search', newFormHandler);
+.addEventListener('search', newFormHandler);*/
