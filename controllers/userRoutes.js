@@ -16,7 +16,7 @@ router.get('/search/:searchContent', async (req, res) => {
   try {
     const jobData = await Job.findAll({
       where: {
-        title: searchContent
+        title: req.params.searchContent
       }
     });
     const jobs = jobData.map((job) => job.get({plain: true}));
