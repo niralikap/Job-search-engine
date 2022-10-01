@@ -15,6 +15,7 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
+        //const logged_in = req.session.logged_in;
         document.location.replace('/');
       } else {
         alert('Failed to log in');

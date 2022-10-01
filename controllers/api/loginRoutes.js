@@ -8,6 +8,7 @@ router.post('/', withAuth, async (req, res) => {
       const newProject = await Project.create({
         ...req.body,
         user_id: req.session.user_id,
+        logged_in: req.session.logged_in,
       });
   
       res.status(200).json(newProject);

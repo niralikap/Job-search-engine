@@ -68,5 +68,14 @@ document
   .addEventListener('submit', newFormHandler);
   
 /*document
-.querySelector('.new-job-form')
-.addEventListener('search', newFormHandler);*/
+  .querySelector('#search')
+  .addEventListener('search', jobSearch);
+
+
+async function jobSearch(event) {
+  event.preventDefault();
+  const searchContent = document.querySelector('#searchContent').value;
+  if (searchContent) {
+    document.location.replace('/search/' + searchContent);
+  }
+};*/

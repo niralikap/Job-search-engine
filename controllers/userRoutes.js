@@ -7,9 +7,26 @@ router.get('/', async (req, res) => {
       res.json(err);
     });
       const jobs = jobData.map((job) => job.get({ plain: true }));
-      res.render('all', { jobs });
+      res.render('all', { jobs,
+      logged_in: req.session.logged_in,
+      });
     });
-
+// route to get some jobs
+router.get('/search/:searchContent', async (req, res) => {
+  try {
+    const jobData = await Job.findAll({
+      where: {
+        title: req.params.searchContent
+      }
+    });
+    const jobs = jobData.map((job) => job.get({plain: true}));
+    res.render('list', {
+      jobs
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 // route to get one job
 router.get('/job/:id', async (req, res) => {
   try{ 
