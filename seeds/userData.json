@@ -14,4 +14,9 @@
         "email": "foobar@foobar.foo",
         "password": "foobarfoobar"
     }
+    {
+        "username": "Test",
+        "email": "test@test.com",
+        "password": "password"
+    }
 ]

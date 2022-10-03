@@ -1,34 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <title>Job Search Engine</title>
+</head>
+<body>
+  <header>
+    <!--Nav bar section with drop down and search-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+  <!--Hero image -->
+  <image>
+    <img src="/assets/imgs/pic.jpg" alt="Job Search" style="height: 500px; width: 100%;">
+  </image>
+  
+  <!--Search and add jobs layout-->  
 <div class="tile is-ancestor">
     <div class="tile is-4 is-vertical is-parent">
-      <div class="tile is-child notification has-background-link-light">
-        <form class="jobsearch">
-        <p class="title">Search Jobs</p>
-        <input class="input" type="text" placeholder="Search by Job Title" id="searchContent">
-        <button class="button" id="search" type='submit' value='Search'>Search</button>
+      <div class="tile is-child box">
+        <p class="title">Search</p>
+        <input class="input" type="text" placeholder="Search by Job Title">
+        <button class="button">Button</button>
       </div>
       <div class="tile is-child box">
         <figure class="image is-128x128">
-            <img src="/assets/imgs/pic.jpg">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
           </figure>
-      </form>
       </div>
     </div>
-
     <div class="tile is-parent">
-      <div class="tile is-child box has-background-link-light">
+      <div class="tile is-child box">
         <p class="title">Add Jobs</p>
         <div class="field">
-          <form class='new-job-form'>
             <label class="label">Title</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Title" id='title' name='title' rows='2' cols='30'>
-              {{title}}
+              <input class="input" type="text" placeholder="Title">
             </div>
 
             <label class="label">Industry</label>
             <div class="select">
-                <select id='industry' name='industry' rows='2' cols='30'>
-                  {{industry}}
+                <select>
                   <option>Industry</option>
                   <option value="Sales">Sales</option>
                   <option value="IT">IT</option>
@@ -50,8 +84,7 @@
 
               <label class="label">Experience</label>
             <div class="select">
-                <select id='experience' name='experience' rows='5' cols='30'>
-                  {{experience}}
+                <select>
                   <option>Experience</option>
                   <option value="Internship">Internship</option>
                 <option value="Entry">Entry</option>
@@ -64,38 +97,32 @@
 
             <label class="label">Minimum Salary</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Minimum Salary" id='minSalary' name='minSalary' rows='2' cols='30'>
-              {{minSalary}}
+              <input class="input" type="text" placeholder="Minimum Salary">
             </div>
 
             <label class="label">Maximum Salary</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Maximum Salary" id='maxSalary' name='maxSalary' rows='2' cols='30'>
-              {{maxSalary}}
+              <input class="input" type="text" placeholder="Maximum Salary">
             </div>
 
             <label class="label">Employer</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Employer" id='employer' name='employer' rows='2' cols='30'>
-              {{employer}}
+              <input class="input" type="text" placeholder="Employer">
             </div>
             
             <label class="label">City</label>
             <div class="control">
-              <input class="input" type="text" placeholder="City" id='city' name='city' rows='2' cols='30'>
-              {{city}}
+              <input class="input" type="text" placeholder="City">
             </div>
 
             <label class="label">State</label>
             <div class="control">
-              <input class="input" type="text" placeholder="State" id='state' name='state' rows='2' cols='30'>
-              {{state}}
+              <input class="input" type="text" placeholder="State">
             </div>
 
             <label class="label">Is Remote</label>
             <div class="select">
-                <select id='isRemote' name='isRemote' rows='2' cols='30'>
-                  {{isRemote}}
+                <select>
                   <option>Is Remote</option>
                   <option value="On-Site">On-site</option>
                 <option value="Remote">Remote</option>
@@ -103,25 +130,13 @@
                 </select>
             </div>
 
-            <label class="label">Hours</label>
-            <div class="select">
-                <select id='hours' name='hours' rows='2' cols='30'>
-                  {{hours}}
-                  <option value="Full-time">Full-time</option>
-                  <option value="Part-time">Part-time</option>
-                  <option value="Contract">Contract</option>
-                  <option value="Temporary">Temporary</option>
-                  <option value="Volunteer">Volunteer</option>
-                  <option value="Internship">Internship</option>
-                </select>
-            </div>
-
-            <button class="button" type='submit' value='Submit'>Submit</button>
-            </form>
+            <button class="button">Submit</button>
       </div>
     </div>
   </div>
 
-
-<script src='/js/jobsearch.js'></script>
-<script src="/js/search.js"></script>
+  <script src="./js/jobsearch.js"></script>
+  <script src="/js/search.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
