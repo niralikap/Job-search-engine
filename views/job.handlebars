@@ -1,23 +1,50 @@
-<div class="job-card">
-  <div class="job-card-header">
+<div class="tile is-ancestor">
+    <div class="tile is-4 is-vertical is-parent">
+      <div class="tile is-child notification has-background-link-light">
+        <form class="job-card">
+        <h1 class="job-card-header" style="font-style:italic;">Job Submitted</h1>
+     </br>   
+    <h1 style="color: rgba(0, 0, 255, 0.424) ;">
+      Industry: 
     {{industry}}
-  </div>
-  <div class="card-body">
-    <p>
-      Experience
+    </h1>
+    <br>
+    <h2 style="color: rgba(0, 0, 255, 0.424) ;">
+      Experience: 
       {{experience}}
-    </p>
-    <p>
-      Job Title
+    </h2>
+    </br>
+    <h2 style="color: rgba(0, 0, 255, 0.424) ;">
+      Job Title: 
       {{title}}
-    </p>
+    </h2>
+    </br>
+    <h2 style="color: rgba(0, 0, 255, 0.424) ;">
+      Employer: 
+      {{employer}}
+    </h2>
+    </br>
+    <h2 style="color: rgba(0, 0, 255, 0.424) ;">
+      City: 
+      {{city}}
+    </h2>
+    </br>
+    <h2 style="color: rgba(0, 0, 255, 0.424) ;">
+      State: 
+      {{state}}
+    </h2>
+    </br>
     {{#if has_salary_range}}
-      <p class="has-salary-range">
+      <h2 class="has-salary-range">
         Salary Range provided
-      </p>
+      </h2>
     {{/if}}
+    </br>
     <button>Edit</button>
     <button>Delete</button>
   <!--Add the routes to allow put and delete requests for each job -->
+        </form>
+      </div>
   </div>
 </div>
+
