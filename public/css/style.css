@@ -17,6 +17,7 @@
     min-height: 100vh;
     justify-content: flex-start;
     background-color: var(--quatrinary);
+    /*background-image: url("/images/pic.jpg");*/
   }
   
   header {
@@ -44,6 +45,10 @@
   nav {
     display: flex;
     background-color: var(--secondary);
+  }
+
+  .picture {
+    background-image: url("/images/pic.jpg");
   }
   
   .menu-container {
