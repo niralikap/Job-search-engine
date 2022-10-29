@@ -31,7 +31,12 @@ Made by Nirali Parmar, Joshua Nelson, Jamie Olivas, and John Aslani, AKA MVC MVP
 
 ## Screenshot
 
-![Deployed App on Heroku](./assets/imgs/DeployedAppHeroku.PNG)
+![Deployed App on Heroku](./assets/imgs/Screenshot1.jpg)
+![Image2](./assets/imgs/Screenshot2.jpg)
+![Image3](./assets/imgs/Screenshot3.jpg)
+![Image4](./assets/imgs/Screenshot4.jpg)
+![Image5](./assets/imgs/Screenshot5.jpg)
+
 
 ## Mockup
 
